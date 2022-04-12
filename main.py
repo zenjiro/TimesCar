@@ -76,7 +76,8 @@ if __name__ == "__main__":
                 driver.find_element(By.ID, "goNext").click()
             else:
                 break
-        data = pandas.DataFrame({"ステーション名": stations, "住所": addresses, "車種": models})
-        data.to_csv(filename, index=False)
+        pandas.DataFrame({"ステーション名": stations, "住所": addresses, "車種": models}).to_csv(
+            filename, index=False
+        )
     finally:
         driver.quit()
