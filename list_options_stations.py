@@ -11,7 +11,7 @@ from os import getenv
 if __name__ == "__main__":
     load_dotenv()
     keyword = "川崎市"
-    filename = "kawasaki-normal.csv"
+    filename = "kawasaki-options.csv"
     driver = webdriver.Chrome()
     driver.implicitly_wait(10)
     driver.get("https://share.timescar.jp/")
